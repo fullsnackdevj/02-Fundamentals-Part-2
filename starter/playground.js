@@ -23,4 +23,4 @@ const calcAverage = function (arr) {
   return sum / arr.length; // total sum array of  totals
 };
 
-// console.log(calcAverage(totals));
+console.log(calcAverage(totals));
