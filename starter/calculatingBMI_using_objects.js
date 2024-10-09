@@ -43,14 +43,16 @@ const john = {
 
 // console.log(`mark.calcBMI(), john.calcBMI()`);
 
-if (mark.calcBMI() > john.calcBMI()) {
-  console.log(
-    `${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${
-      john.fullName
-    }'s BMI (${john.calcBMI()})!`
-  );
-} else {
-  `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${
-    mark.fullName
-  }'s BMI (${mark.calcBMI()})!`;
-}
+new Promise((resolve, reject) => {
+  if (mark.calcBMI() > john.calcBMI()) {
+    console.log(
+      `${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${
+        john.fullName
+      }'s BMI (${john.calcBMI()})!`
+    );
+  } else {
+    `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${
+      mark.fullName
+    }'s BMI (${mark.calcBMI()})!`;
+  }
+});

@@ -17,10 +17,12 @@ for (let i = 0; i < bills.length; i++) {
 let sum = 0;
 
 const calcAverage = function (arr) {
+  console.log(sum);
   for (let i = 0; i < arr.length; i++) {
+    console.log(sum);
     sum = sum + arr[i];
   }
   return sum / arr.length; // total sum array of  totals
 };
 
-console.log(calcAverage(totals));
+console.log(calcAverage(totals), sum);
